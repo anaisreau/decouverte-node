@@ -1,0 +1,10 @@
+process.stdin.resume()
+process.stdin.setEncoding('utf8')
+let year = 2020
+let age = console.log("How old are you ?")
+
+process.stdin.on('data', (age) => {
+    console.log("You was born in "+ (year -age))
+    process.exit()
+  })
+
