@@ -1,10 +1,18 @@
-process.stdin.resume()
-process.stdin.setEncoding('utf8')
-let year = 2020
-let age = console.log("How old are you ?")
 
-process.stdin.on('data', (age) => {
-    console.log("You was born in "+ (year -age))
-    process.exit()
-  })
+    process.stdin.resume()
+    process.stdin.setEncoding('utf8')
+
+       let age =console.log("How old are you ?  ");
+        process.stdin.on('data', (age)=> {
+      if (isNaN(age)=== true){
+        console.log("you must write a number")
+        process.exit()
+      }if (age>99){
+        console.log("you can't have more than 99 years old")
+        process.exit()
+      }else {
+        console.log("You was born in " + (2020 - age) )}
+        process.exit()
+    })
+
 
