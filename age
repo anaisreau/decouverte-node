@@ -1,5 +1,4 @@
-
-    process.stdin.resume()
+   process.stdin.resume()
     process.stdin.setEncoding('utf8')
 
        let age =console.log("How old are you ?  ");
@@ -10,9 +9,11 @@
       }if (age>99){
         console.log("you can't have more than 99 years old")
         process.exit()
+      }if (age<0){
+            console.log("you can't have less than 0 years old")
+            process.exit()
       }else {
         console.log("You was born in " + (2020 - age) )}
         process.exit()
     })
-
 
